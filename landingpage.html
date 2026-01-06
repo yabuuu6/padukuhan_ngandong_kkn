@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website resmi Padukuhan Dusun Ngandong - Desa wisata asri di lereng Gunung Merapi, Sleman, Yogyakarta" />
+  <meta name="keywords" content="Ngandong, Padukuhan, Desa Wisata, Merapi, Sleman, Yogyakarta" />
+  <meta name="author" content="Padukuhan Dusun Ngandong" />
+  <title>Padukuhan Dusun Ngandong | Desa Wisata Lereng Merapi</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS Terpisah -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container flex-between">
+      <h1 class="logo"> Padukuhan Dusun Ngandong</h1>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#wisata">Wisata</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#maps">Lokasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h2>Selamat Datang di Padukuhan Dusun Ngandong</h2>
+    <p>Padukuhan yang asri, mandiri, dan berbudaya di lereng Gunung Merapi. Nikmati keindahan alam, budaya lokal, dan keramahan masyarakat kami.</p>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="section">
+    <div class="container">
+      <h3 class="section-title">Profil Padukuhan</h3>
+      <div class="grid-2">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80" alt="Pemandangan Dusun Ngandong" />
+        <div>
+          <h3>Tentang Kami</h3>
+          <p>
+            Padukuhan Dusun Ngandong terletak di Desa Girikerto, Kecamatan Turi, Kabupaten Sleman, Daerah Istimewa Yogyakarta. 
+            Berada di lereng Gunung Merapi dengan ketinggian sekitar 800-1000 mdpl, padukuhan ini menawarkan udara sejuk dan pemandangan alam yang menakjubkan.
+          </p>
+          <p>
+            Mayoritas penduduk bermata pencaharian di bidang pertanian, terutama tanaman salak pondoh, sayur-sayuran, dan hasil perkebunan lainnya. 
+            Masyarakat kami juga aktif dalam pengembangan wisata berbasis komunitas dan pelestarian budaya lokal.
+          </p>
+          <ul>
+            <li>📍 <strong>Lokasi:</strong> Girikerto, Turi, Sleman, DIY</li>
+            <li>👥 <strong>Jumlah Penduduk:</strong> ± 500 Jiwa (150 KK)</li>
+            <li>🌾 <strong>Mata Pencaharian:</strong> Pertanian & Wisata Lokal</li>
+            <li>⛰️ <strong>Ketinggian:</strong> 800-1000 mdpl</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- STATISTIK -->
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Penduduk</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">150</span>
+          <span class="stat-label">Kepala Keluarga</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">800m</span>
+          <span class="stat-label">Ketinggian</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Destinasi Wisata</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WISATA -->
+  <section id="wisata" class="section bg-white">
+    <div class="container">
+      <h3 class="section-title">Potensi Wisata</h3>
+      <div class="grid-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="Wisata Alam">
+          <h4>🌄 Wisata Alam</h4>
+          <p>Pemandangan perbukitan hijau, udara sejuk pegunungan, dan sunrise spektakuler dari lereng Merapi.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80" alt="Trekking">
+          <h4>🥾 Jalur Trekking</h4>
+          <p>Nikmati petualangan trekking menuju puncak dengan pemanduan lokal yang berpengalaman.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" alt="Wisata Pertanian">
+          <h4>🌾 Wisata Pertanian</h4>
+          <p>Kunjungi kebun salak pondoh dan sawah terasering. Ikuti aktivitas pertanian warga secara langsung.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80" alt="Budaya Lokal">
+          <h4>🎭 Budaya Lokal</h4>
+          <p>Saksikan pertunjukan kesenian tradisional dan ikuti upacara adat masyarakat setempat.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Kuliner Tradisional">
+          <h4>🍜 Kuliner Tradisional</h4>
+          <p>Cicipi makanan khas seperti gudeg, jadah tempe, dan olahan salak pondoh yang segar.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1523438097201-512ae7d59c44?w=600&q=80" alt="Camping Ground">
+          <h4>🏕️ Camping Ground</h4>
+          <p>Area camping yang nyaman dengan fasilitas lengkap dan pemandangan bintang yang memukau.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri" class="section">
+    <div class="container">
+      <h3 class="section-title">Galeri Foto</h3>
+      <div class="grid-4">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" alt="Galeri 1" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80" alt="Galeri 2" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80" alt="Galeri 3" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&q=80" alt="Galeri 4" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPS -->
+  <section id="maps" class="section bg-white">
+    <div class="container">
+      <h3 class="section-title">Lokasi Padukuhan</h3>
+      <p style="text-align: center; color: #6b7280; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Padukuhan Dusun Ngandong terletak di lereng Gunung Merapi, mudah diakses dari pusat kota Yogyakarta dengan waktu tempuh sekitar 1-1.5 jam.
+      </p>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="contact">
+    <h3>Hubungi Kami</h3>
+    <p style="max-width: 700px; margin: 1rem auto; font-size: 1.1rem;">
+      Tertarik untuk berkunjung atau bekerja sama dengan kami? Jangan ragu untuk menghubungi kami!
+    </p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <span style="font-size: 1.5rem;">📧</span>
+        <span><strong>Email:</strong> padukuhanngandong@email.com</span>
+      </div>
+      <div class="contact-item">
+        <span style="font-size: 1.5rem;">📱</span>
+        <span><strong>WhatsApp:</strong> +62 812-3456-7890</span>
+      </div>
+      <div class="contact-item">
+        <span style="font-size: 1.5rem;">📍</span>
+        <span><strong>Alamat:</strong> Ngandong, Girikerto, Turi, Sleman, DIY 55551</span>
+      </div>
+      <div class="contact-item">
+        <span style="font-size: 1.5rem;">🕐</span>
+        <span><strong>Jam Operasional:</strong> Senin - Minggu, 08:00 - 17:00 WIB</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Padukuhan Dusun Ngandong. Dibuat dengan ❤️ untuk masyarakat.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem;">Girikerto, Turi, Sleman, Daerah Istimewa Yogyakarta</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Script untuk Map -->
+  <script>
+    // Inisialisasi Map
+    const map = L.map('map').setView([-7.596528, 110.409639], 14);
+    
+    // Tambah Tile Layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+    
+    // Custom Icon
+    const customIcon = L.divIcon({
+      html: '<div style="background: #16a34a; width: 30px; height: 30px; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"></div>',
+      className: '',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    });
+    
+    // Tambah Marker dengan popup
+    L.marker([-7.596528, 110.409639], {icon: customIcon}).addTo(map)
+      .bindPopup('<div style="text-align: center;"><strong style="color: #16a34a; font-size: 1.1rem;">Padukuhan Dusun Ngandong</strong><br><span style="color: #6b7280;">Girikerto, Turi, Sleman</span></div>')
+      .openPopup();
+
+    // Tambah Circle untuk area
+    L.circle([-7.596528, 110.409639], {
+      color: '#16a34a',
+      fillColor: '#10b981',
+      fillOpacity: 0.2,
+      radius: 500
+    }).addTo(map);
+  </script>
+
+  <!-- Script untuk smooth scroll dan navbar effect -->
+  <script>
+    // Smooth scroll untuk menu
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar scroll effect (optional)
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.style.padding = '0.75rem 0';
+      } else {
+        navbar.style.padding = '1.25rem 0';
+      }
+    });
+  </script>
+
+</body>
+</html>
