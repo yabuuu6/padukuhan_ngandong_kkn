@@ -568,3 +568,55 @@ body {
     font-size: 1.75rem;
   }
 }
+
+/* =====================
+   MOBILE SAFETY LAYER
+===================== */
+@media (max-width: 768px) {
+
+  /* Grid aman */
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .stats,
+  .contact-info {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Navbar tidak kepanjangan */
+  .navbar {
+    padding: 1rem 0 !important;
+  }
+
+  /* HERO tidak kepotong */
+  .hero {
+    padding-top: 7.5rem !important;
+  }
+
+  /* Card aman di mobile */
+  .card {
+    transform: none !important;
+  }
+
+  .card img {
+    transform: none !important;
+  }
+
+  /* Galeri aman */
+  #galeri img {
+    transform: none !important;
+  }
+}
+
+/* =====================
+   TOUCH DEVICE SAFETY
+===================== */
+@media (hover: none) {
+
+  .card:hover,
+  .card:hover img,
+  #galeri img:hover {
+    transform: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  }
+}
